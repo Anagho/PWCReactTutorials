@@ -1,13 +1,164 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #202142;
+  color: #fff;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 768px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 15px;
+  padding: 40px 50px;
+  margin: 20px 0;
+  position: relative;
+}
+
+.card.reverse {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.card h2 {
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.count-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.count {
+  position: relative;
+  background: #ff6a95;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 19px;
+  border: 1px #eee solid;
+  transition: 0.3s;
+}
+
+/* Buttons */
+.btn {
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  width: 100px;
+  height: 30px;
+  /* font-size: 1rem; */
+  font-weight: 600;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #666681;
+}
+
+.btn-secondary {
+  background: #973e58;
+}
+
+.btn-reset {
+  background: rgba(0, 0, 0, 0.4);
+  /* font-size: .9rem; */
+}
+
+.btn-inc,
+.btn-dec {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #fff;
+  height: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+  opacity: 0.9;
+}
+
+input {
+  width: 100%;
+  height: 1.9rem;
+  border: 0;
+  outline: none;
+  color: #333;
+  font-size: 1.2rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 20px 0;
+  text-indent: 50%;
+}
+
+/* Amount Card */
+.amount-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+  margin-top: 20px;
+}
+
+.line {
+  width: 2px;
+  height: 100%;
+  background-color: #c1c1d1;
+}
+
+.display {
+  width: 250px;
+  margin: auto;
+}
+
+.count-text {
+  font-size: 45px;
 }
