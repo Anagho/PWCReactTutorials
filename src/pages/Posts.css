@@ -1,0 +1,43 @@
+.post-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.card_post {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px auto;
+    grid-gap: 20px;
+}
+
+.card_post .post {
+    border: 1px solid #cccccc;
+    padding: 1rem 2rem;
+    text-align: left;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.post .post-btn {
+    background: #333;
+    color: #fff;
+    outline: none;
+    padding: .8rem 1rem;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.post .post-btn:hover {
+    color: #333;
+    background: transparent;
+    outline: 1px solid #333;
+    padding-right: 1rem;
+}
+
+.post .post-btn:hover i {
+    margin-left: 1rem;
+}

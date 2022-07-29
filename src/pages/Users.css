@@ -1,0 +1,24 @@
+.users {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.user-table {}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    font-size: .9rem;
+}
+
+tr:nth-child(odd) {
+    background-color: #d4d4d4;
+}
+
+td {
+    padding: .7rem;
+}
